@@ -34,7 +34,7 @@ jobs:
     - name: Merge into main
       if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'
       run: |
-        git config --global user.email "salirazakazmi@yahoo.com"
+        git config --global user.email "salirazakazmi@yahoo.com  "
         git config --global user.name "salirazakazmi"
         git checkout main
         git pull origin main
